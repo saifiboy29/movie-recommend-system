@@ -1,9 +1,7 @@
-mkdir -p ~/.streamlit/
+#!/bin/bash
+# Git LFS इंस्टॉल करें और फाइल्स डाउनलोड करें
+git lfs install
+git lfs pull
 
-echo "\
-[server]\n\
-port = \$PORT\n\
-enableCORS = false\n\
-headless = true\n\
-\n\
-" > ~/.streamlit/config.toml
+# Python dependencies इंस्टॉल करें
+pip install -r requirements.txt
